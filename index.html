@@ -1000,6 +1000,135 @@
       .hero-copy, .hero-visual { width: 100%; }
     }
 
+  
+
+    /* ===== نفس أبعاد وتوزيع نسخة اللابتوب على الجوال =====
+       تُحفظ الصفحة بعرض سطح المكتب الحقيقي، ويصبح التصفح على الجوال
+       عموديًا وأفقيًا بدون تحويل الأقسام إلى نسخة جوال مختلفة. */
+    @media (max-width: 1180px) {
+      html,
+      body {
+        min-width: 1280px !important;
+        overflow-x: auto !important;
+      }
+
+      body.menu-open { overflow: auto !important; }
+      .site-header { min-width: 1280px !important; }
+      .container {
+        width: 1180px !important;
+        max-width: 1180px !important;
+        margin-inline: auto !important;
+      }
+
+      .section { padding: 100px 0 !important; }
+      .section-head { margin-bottom: 44px !important; }
+      .section-title { font-size: 3.35rem !important; }
+      .section-lead { font-size: 1.05rem !important; }
+
+      .nav { min-height: 88px !important; gap: 24px !important; }
+      .brand-logo {
+        width: 238px !important;
+        height: 70px !important;
+        border-radius: 16px !important;
+      }
+      .site-header .brand-text span { display: block !important; }
+      .nav-links {
+        display: flex !important;
+        gap: 26px !important;
+      }
+      .nav-cta { display: inline-flex !important; }
+      .menu-btn,
+      .mobile-menu { display: none !important; }
+
+      .hero {
+        min-height: 860px !important;
+        padding: 150px 0 88px !important;
+      }
+      .hero-grid {
+        grid-template-columns: 1.12fr .88fr !important;
+        gap: 78px !important;
+      }
+      .hero-copy { text-align: right !important; }
+      .hero h1 { font-size: 5.1rem !important; }
+      .hero p { margin: 25px 0 0 !important; }
+      .hero-actions {
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+      }
+      .hero-actions .btn { width: auto !important; }
+      .hero-trust {
+        display: flex !important;
+        grid-template-columns: none !important;
+        justify-content: flex-start !important;
+        text-align: right !important;
+      }
+      .hero-visual { min-height: 540px !important; }
+      .hero-card {
+        width: min(100%, 410px) !important;
+        min-height: 470px !important;
+        padding: 34px !important;
+        transform: rotate(-2.5deg) !important;
+      }
+      .hero-card h2 { font-size: 2rem !important; }
+      .hero-brand-logo { max-width: 360px !important; margin-bottom: 30px !important; }
+      .hero-orbit { width: 480px !important; height: 480px !important; }
+      .chip-one { right: -28px !important; top: 48px !important; }
+      .chip-two { left: -32px !important; bottom: 55px !important; }
+
+      .hero-grid,
+      .about-grid,
+      .booking-grid,
+      .founder-wrap { gap: revert-layer !important; }
+      .about-grid {
+        grid-template-columns: .95fr 1.05fr !important;
+        gap: 70px !important;
+      }
+      .about-visual {
+        order: initial !important;
+        min-height: 560px !important;
+      }
+      .about-panel { inset: auto 48px 52px !important; }
+
+      .services-grid { grid-template-columns: repeat(3, 1fr) !important; }
+      .service-card { min-height: 280px !important; padding: 26px !important; }
+      .steps { grid-template-columns: repeat(4, 1fr) !important; }
+      .feature-list { grid-template-columns: 1fr 1fr !important; }
+      .vision-grid { grid-template-columns: 1fr 1fr !important; }
+      .vision-card { padding: 38px !important; }
+
+      .founder-wrap {
+        grid-template-columns: .42fr .58fr !important;
+        gap: 0 !important;
+      }
+      .founder-side {
+        min-height: 500px !important;
+        padding: 46px !important;
+      }
+      .founder-copy { padding: 46px !important; }
+
+      .impact-grid { grid-template-columns: repeat(3, 1fr) !important; }
+      .booking-grid {
+        grid-template-columns: .8fr 1.2fr !important;
+        gap: 60px !important;
+      }
+      .booking-form { padding: 32px !important; }
+      .form-grid { grid-template-columns: 1fr 1fr !important; }
+      .field.full { grid-column: 1 / -1 !important; }
+
+      .footer-grid {
+        grid-template-columns: 1.2fr .8fr .8fr !important;
+        gap: 50px !important;
+      }
+      .footer-grid > :first-child { grid-column: auto !important; }
+      .copyright { flex-direction: row !important; }
+      .whatsapp-float {
+        left: 22px !important;
+        bottom: 22px !important;
+        width: 58px !important;
+        height: 58px !important;
+      }
+    }
+
   </style>
 </head>
 <body>
