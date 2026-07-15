@@ -1170,7 +1170,30 @@
       }
     }
 
-  </style>
+  
+
+    /* ===== الجوال: نفس عرض اللابتوب، والقسم الأول يملأ شاشة الجوال ===== */
+    @media screen and (max-device-width: 900px) and (orientation: portrait) {
+      html, body {
+        min-height: 100%;
+        overflow-x: hidden;
+      }
+
+      .hero {
+        min-height: 88vh !important;
+        min-height: 88svh !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+        padding-top: 150px !important;
+        padding-bottom: 88px !important;
+        align-items: center !important;
+      }
+
+      .hero-grid {
+        align-items: center !important;
+      }
+    }
+</style>
 </head>
 <body>
   <header class="site-header" id="header">
